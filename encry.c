@@ -20,7 +20,9 @@ int main() {
              k1=(int)tolower(a1[i])+10;
              printf("%c",(i==0 || i==k)?a1[i]:(k1>122)?(k1%122)+96:k1);}
 	    else
-	    printf("%c",((int)a[i]+10));
+	    {
+	    k1=(int)tolower(a[i])+10;
+	    printf("%c",(k1>122)?(k1%122)+96:k1);}
 	    }
 	return 0;
 }
