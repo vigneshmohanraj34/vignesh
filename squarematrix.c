@@ -1,8 +1,8 @@
 #include<stdio.h>
-min(int,int,int);
-static int m[10][10],i,j;
+int min(int,int,int);
+static int m[10][10],i,j,maxi,maxj;
 void matrix(int,int,int);
-void main()
+main()
 {
 int ms,n,n1;
 scanf("%d%d",&n,&n1);
@@ -17,12 +17,15 @@ m[i][j]=min(m[i][j-1],m[i-1][j],m[i-1][j-1])+1;
 else
 m[i][j]=0;
 if(ms<m[i][j])
+{
 ms=m[i][j];
-}
+maxi=i;
+maxj=j;
+}}
 matrix(ms,ms,1);
-getch();
+return(0);
 }
-min(int a,int b,int c)
+int min(int a,int b,int c)
 {
 int m=a;
 if(m>b)
@@ -33,6 +36,8 @@ return(m);
 }
 void matrix(int a,int b,int k)
 {
+  if(k==1)
+    printf("the maximum square sub matrixes with all 1 bits is from (%d,%d) to (%d,%d)\n",(a-maxj),(a-maxi),maxi,maxj);
 for(i=0;i<a;i++)
 {
 for(j=0;j<b;j++)
