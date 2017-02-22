@@ -4,8 +4,8 @@ void sort(int);
 main()
 {
 scanf("%d",&n);
-for(i=0;i<n;i++)
-scanf("%d",&a[i]);
+for(i=0;i<n;i++)                         //getting the elemnt
+scanf("%d",&a[i]);                            
 sort(1);
 for(i=0;i<n;i++)
 {
@@ -13,7 +13,7 @@ k1=0;
 k=a[i];
 while(k>0)
 {
-if(k%2==1)
+if(k%2==1)                            //to find how many ones in given array
 k1++;
 k=k/2;
 }
@@ -33,7 +33,7 @@ k=b[i];
 k1=a[i];
 if(l==1)
 k=k1;
-for(j=i;j>0 && ((l==1)?a[j-1]:b[j-1])>k;j--)
+for(j=i;j>0 && ((l==1)?a[j-1]:b[j-1])>k;j--)                                    // insertion sort
 {
 a[j]=a[j-1];
 if(l==0)
