@@ -1,6 +1,6 @@
 import java.util.*;
 
-class GFG {
+class problem69 {
 	public static void main (String[] args) {
 		int j=-1,k,k1=1,k2=0,k4=0;
 		Scanner s1=new Scanner(System.in);
