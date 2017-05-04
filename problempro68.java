@@ -19,6 +19,7 @@ class problempro68 {
 		      l=s;
 		      s=t;
 		  }}
+		t="";
 		  s=l.substring(0,1)+s;
 		  for(int i=0;i<s.length();i++)
 		  {
