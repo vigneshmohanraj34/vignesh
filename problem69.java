@@ -5,16 +5,16 @@ class GFG {
 		int j=-1,k,k1=1,k2=0,k4=0;
 		Scanner s1=new Scanner(System.in);
 		String s=s1.next();
-		int a[]=new int[s.length()-1];
+		int a[]=new int[s.length()];
 		
 		for(int i=0;i<s.length();i++)
 		    if(Character.isDigit(s.charAt(i)))
 		    a[++j]=Integer.parseInt(s.substring(i,i+1));
 		
 		 Arrays.sort(a);
-		        for(int i=1;i<a.length;i++)
+		        for(int i=2;i<a.length;i++)
 		        {
-		        k1=(a[i]+a[1])*k1;
+		        k1=(a[i]+a[2])*k1;
 		        k2=(a[i]*a[a.length-1])+k2;
                 }
             
