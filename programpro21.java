@@ -1,6 +1,6 @@
 import java.util.*;
 
-class GFG {
+class programpro21 {
 	public static void main (String[] args)
 	{
 	    Scanner s=new Scanner(System.in);
