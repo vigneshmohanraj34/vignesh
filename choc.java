@@ -2,7 +2,7 @@ import java.util.Scanner;
 class choc {
     public static String chocolate(int m,int n)
     {
-        if(m==0 || n==0)
+        if(m<=0 || n<=0)
         return "enter the validate rows and column";
         else
         return ((m*n)-1)+"";
