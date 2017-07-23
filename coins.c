@@ -18,6 +18,6 @@ int main() {
 	    else
 	    s=s+j;
 	}
-	printf("count=%d",s);
+	printf("\ncount=%d",s);
 	return 0;
 }
