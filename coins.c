@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main() {
 	int s,j,a;
 	printf("enter the amount:");
@@ -9,8 +10,9 @@ int main() {
 	s=a%3+a/3;
 	else
 	{
-	    s=a/3;
-	    j=a%3;
+	    s=a/5;
+	    j=a%5;
+	    printf("%d",j);
 	    if(j>=3)
 	    s=s+(j%3)+(j/3);
 	    else
