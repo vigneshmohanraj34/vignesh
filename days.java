@@ -1,5 +1,5 @@
  import java.util.*;
-public class HelloWorld{
+public class days{
 public static void main(String []args){
         Scanner s=new Scanner(System.in);
         String days[]={"sunday","monday","tuesday","wednesday","thursday","friday","saturday"};
