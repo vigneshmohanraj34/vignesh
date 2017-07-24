@@ -1,5 +1,5 @@
-import java.util.*;
-public class days{
+ import java.util.*;
+public class HelloWorld{
 public static void main(String []args){
         Scanner s=new Scanner(System.in);
         String days[]={"sunday","monday","tuesday","wednesday","thursday","friday","saturday"};
@@ -21,4 +21,7 @@ public static void main(String []args){
                 ans=ans+days[check]+",";
             }
             check++;}
-    System.out.print(ans.substring(0,ans.length()-1));}}
+            StringBuffer eval=new StringBuffer(ans.substring(0,ans.length()-1)),eval1=eval.insert(eval.lastIndexOf(",")," and ");
+    System.out.print(eval.deleteCharAt(eval.lastIndexOf(",")));}}
+
+    
