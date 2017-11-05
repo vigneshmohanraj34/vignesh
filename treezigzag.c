@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 struct tree
 {
 int d;
@@ -21,7 +20,6 @@ void inor(struct tree *);
 void main()
 {
 int i,n,u;
-clrscr();
 scanf("%d",&n);
 for(i=0;i<n;i++)
 {
@@ -29,7 +27,7 @@ scanf("%d",&u);
 create(u);
 }
 zig(r);
-getch();
+  return 0;
 }
 void create(int d)
 {
