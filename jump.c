@@ -4,6 +4,7 @@ int main()
 long int d;
 int n,n1,z=0;
 scanf("%ld",&d);
+  d=abs(d);
 if(d%10==d)
 printf("%ld is jumping number",d);
 else
